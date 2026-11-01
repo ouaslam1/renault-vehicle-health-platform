@@ -1,0 +1,13 @@
+services:
+
+  telemetry-service:
+    build:
+      context: ./telemetry-service
+    ports:
+      - "8080:8080"
+
+  vehicle-analysis-service:
+    build:
+      context: ./vehicle-analysis-service
+    ports:
+      - "8081:8081"
